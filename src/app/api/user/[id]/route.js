@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
+// GET A SPECIFIC STUDENT
 export async function GET(req, { params }) {
     try {
         const id = params.id
@@ -17,6 +18,7 @@ export async function GET(req, { params }) {
     }
 }
 
+// UPDATE A SPECIFIC STUDENT
 export async function PATCH(req, { params }) {
     try {
         const id = params.id
@@ -37,6 +39,7 @@ export async function PATCH(req, { params }) {
     }
 }
 
+// DELETE A SPECIFIC STUDENT
 export async function DELETE(req, { params }) {
     try {
         const id = params.id
